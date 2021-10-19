@@ -1,4 +1,4 @@
-package br.com.jv_aredess.businesscard.UI
+package br.com.jv_aredess.businesscard.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,3 +12,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 }
+
+
