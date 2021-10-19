@@ -2,4 +2,9 @@
     <string name="app_name">businessCard</string>
     <string name="businesscard">BusinessCard</string>
     <string name="my_cards">My cards</string>
+    <string name="cd_nome">Nome</string>
+    <string name="new_card">New card</string>
+    <string name="cd_telefone">telefone</string>
+    <string name="cd_email">email</string>
+    <string name="cd_empresa">empresa</string>
 </resources>
