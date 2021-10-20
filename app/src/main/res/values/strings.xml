@@ -7,4 +7,5 @@
     <string name="cd_telefone">telefone</string>
     <string name="cd_email">email</string>
     <string name="cd_empresa">empresa</string>
+    <string name="label_show_sucess">Cartão criado</string>
 </resources>

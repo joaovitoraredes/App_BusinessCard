@@ -41,6 +41,5 @@
         tools:layout_editor_absoluteX="16dp"
         tools:listitem="@layout/card"/>
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 
