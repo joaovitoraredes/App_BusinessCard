@@ -10,15 +10,14 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="darkUi">#1C1E1F</color>
-    <color name="darkbluesUI">#22262B</color>
+    <color name="darkbluesUI">#333333  </color>
     <color name="whiteUI">#EDEFF3</color>
     <color name="grayUI">#7C7F87</color>
     <color name="grayUI2">#585A61</color>
 
-    <color name="app">#555985</color>
-    <color name="azulmarinho">#17232F</color>
-    <color name="azulmarinho2">#A317232F</color>
-    <color name="bege">#B5A886</color>
-    <color name="azulbb">#B3D2D0</color>
+    <color name="whitee">#CBCFCFCF</color>
+
+
+
 
 </resources>

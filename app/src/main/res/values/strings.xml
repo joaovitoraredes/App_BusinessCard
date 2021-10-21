@@ -8,4 +8,10 @@
     <string name="cd_email">email</string>
     <string name="cd_empresa">empresa</string>
     <string name="label_show_sucess">Cartão criado</string>
+    <string name="esmeralda">Cartão de visitas de funcionários do ramo de marketing digital da Hyper Softwares</string>
+    <string name="diamante">Cartão criado</string>
+    <string name="rubi">Cartão criado</string>
+    <string name="black">Cartão criado</string>
+    <string name="nossocartoes">Em nosso aplicativo é permitido a criação de cartões de visitas por cargo</string>
+
 </resources>

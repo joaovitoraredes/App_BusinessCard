@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/darkUi"
-    tools:context=".UI.AddCard">
+    android:background="?android:attr/colorPrimary"
+    tools:context=".ui.AddCard">
 
     <ImageButton
         android:id="@+id/btn_back"
@@ -15,7 +15,9 @@
         android:src="@drawable/ic_arrow_back"
         android:layout_margin="16dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="?android:attr/colorPrimary"
+        />
 
     <TextView
         android:id="@+id/cd_title"
@@ -25,7 +27,7 @@
         android:layout_margin="16dp"
         android:textStyle="bold"
         android:textSize="26dp"
-        android:textColor="@color/whiteUI"
+        android:textColor="?android:attr/textColorPrimary"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
@@ -44,7 +46,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="text" />
+            android:inputType="text"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,13 +66,10 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="text" />
+            android:inputType="text"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
-
-
-
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/cd_email"

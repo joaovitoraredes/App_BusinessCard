@@ -4,20 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/darkUi"
+    android:background="@drawable/ic_blob_scene_haikei__3_"
     tools:context=".ui.MainActivity">
 
     <TextView
         android:id="@+id/vz_title"
-        android:text="@string/my_cards"
+        android:text="Wellcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:textColor="@color/whiteUI"
-        android:textSize="26dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="34dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/vz_text"
+        android:text="Conheça nossos cartões"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vz_title"
+        />
 
     <ImageButton
         android:id="@+id/btn_plus"
@@ -29,17 +41,65 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+
+    <View
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/menu_flutuante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:scrollIndicators="right"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vz_title"
         tools:itemCount="8"
-        tools:layout_editor_absoluteX="16dp"
-        tools:listitem="@layout/card"/>
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/a"
+        tools:listitem="@layout/card" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="178dp" />
+
+
+    <TextView
+        android:id="@+id/dfsdf"
+        android:text="Cartões premium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="34dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/a"
+        android:text="@string/nossocartoes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dfsdf"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
