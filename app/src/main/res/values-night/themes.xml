@@ -12,5 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
         <!-- Customize your theme here. -->
+        <item name="backgroundColor">@drawable/ic_blob_scene_haikei__3_</item>
+
     </style>
 </resources>
