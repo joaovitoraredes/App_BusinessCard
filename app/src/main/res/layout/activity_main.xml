@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/vz_title"
-        android:text="Wellcome"
+        android:text="Bem Vindo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -30,8 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/vz_title"/>
 
-
-    <ImageButton
+    <!--<ImageButton
         android:id="@+id/btn_plus"
         app:srcCompat="@drawable/ic_add"
         android:layout_width="wrap_content"
@@ -39,7 +38,7 @@
         android:layout_margin="16dp"
         android:background="?attr/actionBarItemBackground"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"/> -->
 
 
     <View
@@ -79,6 +78,8 @@
         android:layout_margin="24dp"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="34dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -117,10 +118,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text=" - - - - - Black - - - - - "
-                android:textSize="24dp"
                 android:gravity="center"
-                />
+                android:text=" - - - - - Black - - - - - "
+                android:textSize="24dp" />
 
             <View
                 android:id="@+id/black"
@@ -134,16 +134,14 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="24dp"
                 app:layout_constraintDimensionRatio="16:9"
-                android:background="@drawable/ic_poly_grid_black_"
-                />
+                android:background="@drawable/ic_poly_grid_black_"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text=" - - - - - Rubi - - - - -"
                 android:textSize="24dp"
-                android:gravity="center"
-                />
+                android:gravity="center"/>
 
             <View
                 android:id="@+id/rubi"
@@ -164,8 +162,7 @@
                 android:layout_height="match_parent"
                 android:text=" - - - - - Esmeralda - - - - -"
                 android:textSize="24dp"
-                android:gravity="center"
-                />
+                android:gravity="center"/>
 
             <View
                 android:id="@+id/esmeralda"
@@ -186,8 +183,7 @@
                 android:layout_height="match_parent"
                 android:text=" - - - - - Diamante - - - - -"
                 android:textSize="24dp"
-                android:gravity="center"
-                />
+                android:gravity="center"/>
 
             <View
                 android:id="@+id/dima"
@@ -202,10 +198,24 @@
                 android:layout_marginBottom="24dp"
                 app:layout_constraintDimensionRatio="16:9"
                 android:background="@drawable/ic_poly_grid_dima"/>
-            -->
+
         </LinearLayout>
 
     </ScrollView>
+
+    <Button
+        android:id="@+id/btn_Plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        android:text="Meus cartões"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--android:background="?attr/actionBarItemBackground"-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

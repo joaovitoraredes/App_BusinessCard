@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusinessCard">
         <activity
+            android:name=".ui.Meus_cartoes"
+            android:exported="true" />
+        <activity
+            android:name=".ui.MyCards"
+            android:exported="true" />
+        <activity
             android:name=".ui.AddCard"
             android:exported="true" />
         <activity
