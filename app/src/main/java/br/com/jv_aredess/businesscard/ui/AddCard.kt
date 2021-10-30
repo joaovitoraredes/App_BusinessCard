@@ -12,7 +12,6 @@ import br.com.jv_aredess.businesscard.databinding.ActivityAddCardBinding
 class AddCard : AppCompatActivity() {
 
     private val binding by lazy { ActivityAddCardBinding.inflate(layoutInflater)}
-
     private val mainViewModel: MainViewModel by viewModels {
         MainViewModelFactory((application as App).repository)
     }
@@ -40,5 +39,6 @@ class AddCard : AppCompatActivity() {
             finish()
         }
     }
+
 }
 

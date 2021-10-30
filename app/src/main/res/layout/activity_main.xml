@@ -204,7 +204,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/btn_Plus"
+        android:id="@+id/btn_MeusCartoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -215,6 +215,16 @@
         android:textColor="?android:attr/textColorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vz_text"
+        app:layout_constraintTop_toBottomOf="@+id/btn_MeusCartoes" />
     <!--android:background="?attr/actionBarItemBackground"-->
 
 

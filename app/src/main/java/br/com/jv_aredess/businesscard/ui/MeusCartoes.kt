@@ -6,10 +6,11 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import br.com.jv_aredess.businesscard.App
 import br.com.jv_aredess.businesscard.databinding.ActivityMainBinding
+import br.com.jv_aredess.businesscard.databinding.ActivityMeusCartoesBinding
 
-class MainActivity : AppCompatActivity() {
+class MeusCartoes : AppCompatActivity() {
 
-    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    private val binding by lazy { ActivityMeusCartoesBinding.inflate(layoutInflater)}
     private val mainViewModel: MainViewModel by viewModels {
         MainViewModelFactory((application as App).repository)
     }
@@ -19,30 +20,27 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-//      getAllBusinessCard()
+        binding.recyclerView.adapter = adapter
+        getAllBusinessCard()
         insertListener()
     }
 
-
     private fun insertListener() {
-        binding.btnMeusCartoes.setOnClickListener {
-            val intent = Intent(this@MainActivity, MeusCartoes::class.java)
+        binding.btnBack2.setOnClickListener{
+            val intent = Intent(this@MeusCartoes,MainActivity::class.java)
             startActivity(intent)
         }
 
-        binding.buttonS.setOnClickListener {
-            val intent = Intent(this@MainActivity, SpinnerClass::class.java)
+        binding.btnPlus2.setOnClickListener{
+            val intent = Intent(this@MeusCartoes,AddCard::class.java)
             startActivity(intent)
         }
     }
+
+    private fun getAllBusinessCard() {
+        mainViewModel.getAll().observe(this, { businessCards ->
+            adapter.submitList(businessCards)
+        })
+    }
+
 }
-
-
-//    private fun getAllBusinessCard() {
-//        mainViewModel.getAll().observe(this, { businessCards ->
-//            adapter.submitList(businessCards)
-//        })
-//    }
-
-
-//
