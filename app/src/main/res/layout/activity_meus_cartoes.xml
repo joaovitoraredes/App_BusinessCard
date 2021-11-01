@@ -9,21 +9,22 @@
 
     <TextView
         android:id="@+id/vz_title"
-        android:text="Meus cartões"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:fontFamily="@font/volkhov"
+        android:text="Meus cartões"
         android:textColor="@color/whiteUI"
         android:textSize="34dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/vz_text"
         android:text="Aqui você encontrará todos seus cartões"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="0dp"
         android:layout_marginRight="16dp"
         android:textColor="@color/whiteUI"
         android:textSize="18dp"
@@ -37,12 +38,15 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:scrollIndicators="right"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:itemCount="8"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/vz_text"
-        tools:listitem="@layout/card"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/card"
+        />
 
     <ImageButton
         android:id="@+id/btn_back2"

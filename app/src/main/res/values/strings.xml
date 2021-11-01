@@ -13,5 +13,7 @@
     <string name="rubi">Cartão criado</string>
     <string name="black">Cartão criado</string>
     <string name="nossocartoes">Em nosso aplicativo é permitido a criação de cartões com qualidade premium e designer próprio</string>
+    <string name="label_share">Compartilhar</string>
+
 
 </resources>

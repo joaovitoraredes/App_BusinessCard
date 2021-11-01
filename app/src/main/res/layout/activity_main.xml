@@ -9,26 +9,15 @@
 
     <TextView
         android:id="@+id/vz_title"
-        android:text="Bem Vindo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:fontFamily="@font/volkhov"
+        android:text="Bem Vindo"
         android:textColor="@color/whiteUI"
         android:textSize="34dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <TextView
-        android:id="@+id/vz_text"
-        android:text="Conheça nossos modelos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="16dp"
-        android:textColor="@color/whiteUI"
-        android:textSize="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/vz_title"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!--<ImageButton
         android:id="@+id/btn_plus"
@@ -41,6 +30,18 @@
         app:layout_constraintEnd_toEndOf="parent"/> -->
 
 
+    <TextView
+        android:id="@+id/vz_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Conheça nossos cartões"
+        android:textColor="@color/whiteUI"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vz_title" />
+
     <View
         android:id="@+id/menu"
         android:layout_width="match_parent"
@@ -49,19 +50,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline2"
         />
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:scrollIndicators="right"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:itemCount="8"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/a"
-<!--        tools:listitem="@layout/card"/>-->
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -72,30 +61,33 @@
 
     <TextView
         android:id="@+id/dfsdf"
-        android:text="Cartões premium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="24dp"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/volkhov"
+        android:gravity="center"
+        android:text="Cartões premium"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="34dp"
-        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline2"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
 
     <TextView
         android:id="@+id/a"
-        android:text="@string/nossocartoes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
+        android:fontFamily="@font/volkhov"
+        android:text="@string/nossocartoes"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="16dp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dfsdf"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dfsdf" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -118,6 +110,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/alegreya"
                 android:gravity="center"
                 android:text=" - - - - - Black - - - - - "
                 android:textSize="24dp" />
@@ -125,7 +118,7 @@
             <View
                 android:id="@+id/black"
                 android:layout_width="match_parent"
-                android:layout_height="205dp"
+                android:layout_height="match_parent"
                 app:layout_constraintTop_toBottomOf="@+id/a"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -139,9 +132,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/alegreya"
+                android:gravity="center"
                 android:text=" - - - - - Rubi - - - - -"
-                android:textSize="24dp"
-                android:gravity="center"/>
+                android:textSize="24dp" />
 
             <View
                 android:id="@+id/rubi"
@@ -160,9 +154,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/alegreya"
+                android:gravity="center"
                 android:text=" - - - - - Esmeralda - - - - -"
-                android:textSize="24dp"
-                android:gravity="center"/>
+                android:textSize="24dp" />
 
             <View
                 android:id="@+id/esmeralda"
@@ -181,9 +176,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/alegreya"
+                android:gravity="center"
                 android:text=" - - - - - Diamante - - - - -"
-                android:textSize="24dp"
-                android:gravity="center"/>
+                android:textSize="24dp" />
 
             <View
                 android:id="@+id/dima"
@@ -207,26 +203,13 @@
         android:id="@+id/btn_MeusCartoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginTop="48dp"
+        android:layout_margin="12dp"
         android:layout_marginEnd="16dp"
         android:textStyle="bold"
         android:text="Meus cartões"
         android:textColor="?android:attr/textColorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/vz_text"
-        app:layout_constraintTop_toBottomOf="@+id/btn_MeusCartoes" />
-    <!--android:background="?attr/actionBarItemBackground"-->
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

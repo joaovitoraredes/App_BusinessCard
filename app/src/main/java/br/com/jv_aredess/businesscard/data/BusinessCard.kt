@@ -10,5 +10,5 @@ data class BusinessCard(
     val telefone: String,
     val email: String,
     val empresa: String,
-    val fundoPersonalizado: String,
+    val tipoId: Int,
 )

@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import br.com.jv_aredess.businesscard.App
 import br.com.jv_aredess.businesscard.databinding.ActivityMainBinding
+import br.com.jv_aredess.businesscard.util.Image
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,9 +20,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-//      getAllBusinessCard()
         insertListener()
     }
+
 
 
     private fun insertListener() {
@@ -30,19 +31,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.buttonS.setOnClickListener {
-            val intent = Intent(this@MainActivity, SpinnerClass::class.java)
-            startActivity(intent)
-        }
     }
 }
 
-
-//    private fun getAllBusinessCard() {
-//        mainViewModel.getAll().observe(this, { businessCards ->
-//            adapter.submitList(businessCards)
-//        })
-//    }
-
-
-//

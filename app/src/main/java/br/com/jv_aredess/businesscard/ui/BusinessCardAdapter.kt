@@ -1,6 +1,5 @@
 package br.com.jv_aredess.businesscard.ui
 
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,7 +17,6 @@ class BusinessCardAdapter :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = CardBinding.inflate(inflater, parent, false)
-
         return ViewHolder(binding)
     }
 
@@ -31,17 +29,36 @@ class BusinessCardAdapter :
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: BusinessCard) {
-            binding.ctNome.text = item.nome
-            binding.ctTelefone.text = item.telefone
-            binding.ctEmail.text = item.email
-            binding.ctEmpresa.text = item.empresa
-            binding.mctContent.setCardBackgroundColor(Color.parseColor(item.fundoPersonalizado))
-            binding.mctContent.setOnClickListener {
-                listenerShare(it)
+            if (item.tipoId == 0) {
+                binding.ctRView.setBackgroundColor(0)
+                binding.ctEView.setBackgroundColor(0)
+                binding.ctDView.setBackgroundColor(0)
+            }
+            else if (item.tipoId == 1) {
+                binding.ctBView.setBackgroundColor(0)
+                binding.ctEView.setBackgroundColor(0)
+                binding.ctDView.setBackgroundColor(0)
+            }
+            else if (item.tipoId == 2) {
+                binding.ctBView.setBackgroundColor(0)
+                binding.ctRView.setBackgroundColor(0)
+                binding.ctDView.setBackgroundColor(0)
+            }
+            else if (item.tipoId == 3) {
+                binding.ctBView.setBackgroundColor(0)
+                binding.ctRView.setBackgroundColor(0)
+                binding.ctEView.setBackgroundColor(0)
+            }
+                binding.ctNome.text = item.nome
+                binding.ctTelefone.text = item.telefone
+                binding.ctEmail.text = item.email
+                binding.ctEmpresa.text = item.empresa
+                binding.mctContent.setOnClickListener {
+                    listenerShare(it)
+                }
             }
         }
     }
-}
 
 class DiffCallback : DiffUtil.ItemCallback<BusinessCard>() {
     override fun areItemsTheSame(oldItem: BusinessCard, newItem: BusinessCard) = oldItem == newItem

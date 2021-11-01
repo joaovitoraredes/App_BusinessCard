@@ -23,9 +23,32 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <View
+            android:id="@+id/ctB_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/ic_poly_grid_esmeralda"/>
+            android:background="@drawable/ic_poly_grid_black_"
+        />
+
+        <View
+            android:id="@+id/ctR_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_poly_grid_rubi"
+            />
+
+        <View
+            android:id="@+id/ctE_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_poly_grid_esmeralda"
+            />
+
+        <View
+            android:id="@+id/ctD_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_poly_grid_dima"
+            />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -70,6 +93,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:text="Empresa" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
