@@ -50,7 +50,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/cd_telefone"
         android:layout_width="0dp"
@@ -111,7 +110,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <Spinner
         android:id="@+id/cd_spinner"
         android:layout_width="match_parent"
@@ -143,7 +141,7 @@
         android:layout_height="wrap_content"
         android:text="Criar cartão"
         android:textColor="?android:attr/textColorPrimary"
-        android:layout_margin="16dp"
+        android:layout_marginBottom="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
